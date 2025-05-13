@@ -1,6 +1,5 @@
 import { connectDB } from "@/lib/db";
 import { Tasks } from "@/lib/models/Tasks";
-import { exportPages } from "next/dist/export/worker";
 
 export async function PUT(request, { params }) {
   await connectDB();
